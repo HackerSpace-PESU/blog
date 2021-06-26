@@ -33,6 +33,7 @@ templateClass: tmpl-post
 
 <div id="postfooter">
   <p>
+    <!-- TODO EDIT THIS --> 
     👋 Hi! Since you've made it this far, 
     <a href="{{ shareUrl | safe }}" on-click="share">sharing</a> this article on your favorite social network 
     would be highly appreciated!  For feedback, <a href="mailto:{{ metadata.author.email }}" target="_blank" rel="noopener">write me an email</a> 
@@ -87,9 +88,11 @@ templateClass: tmpl-post
      *  https://disqus.com/admin/universalcode/#configuration-variables
      */
 
+     // TODO fix this
+
     var disqus_config = function () {
         // Replace PAGE_URL with your page's canonical URL variable
-      this.page.url = "https://blog.anirudhrowjee.xyz{{ page.url  }}";  
+      this.page.url = "https://<< URL HERE >>{{ page.url  }}";  
         // Replace PAGE_IDENTIFIER with your page's unique identifier variable
       this.page.identifier = "{{ page.filePathStem }}" ; 
       this.page.title = "{{ title }}";
@@ -99,7 +102,7 @@ templateClass: tmpl-post
         var d = document, s = d.createElement('script');
         
         // IMPORTANT: Replace EXAMPLE with your forum shortname!
-        s.src = 'https://anirudhrowjeesblog.disqus.com/embed.js';
+        s.src = 'https://<< DISQUS URL >>.disqus.com/embed.js';
         
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
