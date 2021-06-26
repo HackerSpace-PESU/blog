@@ -1,0 +1,896 @@
+/* Color customization */
+:root {
+  --primary: #f9c412;
+  --primary-dark: #E7BF60;
+}
+
+.test-dead-code-elimination-sentinel {
+  color: red;
+}
+
+/*
+  Make image rasterization lazy. This means that e.g. the cost of the
+  blurry placeholder is never paid if images load before entering
+  the viewport.
+  Context
+  - https://web.dev/content-visibility/#skipping-rendering-work-with-content-visibility
+ */
+main img {
+  content-visibility: auto;
+}
+
+/* "Content-visibility: auto" move the images over the other elements
+   Set z-index to keep the nav over the rasterized images */
+header nav {
+  z-index: 1;
+}
+
+/*! purgecss start ignore */
+:root {
+  --main-width: calc(100vw - 3em);
+}
+
+@media (min-width: 37.5em) {
+  :root {
+    --main-width: calc(37.5em - 3em);
+  }
+}
+/*! purgecss end ignore */
+
+share-widget {
+
+  position: fixed;
+  /*
+  left: 77vw;
+  bottom: 1vh;
+  */
+  bottom: 1vh;
+  right: 1vw;
+  opacity: 0.9;
+}
+
+share-widget div {
+  width: 30px;
+  height: 30px;
+  background-image: url('/img/share.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.apple share-widget div {
+  background-image: url('/img/share-apple.svg');
+}
+
+share-widget button {
+  padding: 1em;
+  border-radius: 0.3em;  
+  margin: 0;
+}
+
+share-widget button:active {
+  transform: scale(1.2);
+}
+
+dialog {
+  background-color: #8dff80;
+  position: fixed;
+  opacity: 0.9;
+}
+
+img[align="left"] {
+  width: auto;
+  height: 16rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+dl {
+  clear: both;
+  display: block!important;
+}
+
+header aside {
+  font-style: italic;
+}
+
+#nav {
+  z-index: 2;
+  position: relative;
+  text-align: center;
+  margin-bottom: 2em;
+  display: flex;
+}
+
+
+
+#posts li {
+  margin-bottom: 0.5em;
+}
+
+
+#posts {
+  margin-top: 2em;
+}
+
+@font-face {
+  font-family: 'Inter UI';
+  font-style:  normal;
+  font-weight: 100;
+  src: url("/fonts/Inter-Thin.woff2") format("woff2"),
+       url("/fonts/Inter-Thin.woff") format("woff");
+}
+@font-face {
+  font-family: 'Inter UI';
+  font-style:  italic;
+  font-weight: 100;
+  src: url("/fonts/Inter-ThinItalic.woff2") format("woff2"),
+       url("/fonts/Inter-ThinItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter UI';
+  font-style:  normal;
+  font-weight: 200;
+  src: url("/fonts/Inter-ExtraLight.woff2") format("woff2"),
+       url("/fonts/Inter-ExtraLight.woff") format("woff");
+}
+@font-face {
+  font-family: 'Inter UI';
+  font-style:  italic;
+  font-weight: 200;
+  src: url("/fonts/Inter-ExtraLightItalic.woff2") format("woff2"),
+       url("/fonts/Inter-ExtraLightItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter UI';
+  font-style:  normal;
+  font-weight: 300;
+  src: url("/fonts/Inter-Light.woff2") format("woff2"),
+       url("/fonts/Inter-Light.woff") format("woff");
+}
+@font-face {
+  font-family: 'Inter UI';
+  font-style:  italic;
+  font-weight: 300;
+  src: url("/fonts/Inter-LightItalic.woff2") format("woff2"),
+       url("/fonts/Inter-LightItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter UI';
+  font-style:  normal;
+  font-weight: 400;
+  src: url("/fonts/Inter-Regular.woff2") format("woff2"),
+       url("/fonts/Inter-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: 'Inter UI';
+  font-style:  italic;
+  font-weight: 400;
+  src: url("/fonts/Inter-Italic.woff2") format("woff2"),
+       url("/fonts/Inter-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter UI';
+  font-style:  normal;
+  font-weight: 500;
+  src: url("/fonts/Inter-Medium.woff2") format("woff2"),
+       url("/fonts/Inter-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: 'Inter UI';
+  font-style:  italic;
+  font-weight: 500;
+  src: url("/fonts/Inter-MediumItalic.woff2") format("woff2"),
+       url("/fonts/Inter-MediumItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter UI';
+  font-style:  normal;
+  font-weight: 600;
+  src: url("/fonts/Inter-SemiBold.woff2") format("woff2"),
+       url("/fonts/Inter-SemiBold.woff") format("woff");
+}
+@font-face {
+  font-family: 'Inter UI';
+  font-style:  italic;
+  font-weight: 600;
+  src: url("/fonts/Inter-SemiBoldItalic.woff2") format("woff2"),
+       url("/fonts/Inter-SemiBoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter UI';
+  font-style:  normal;
+  font-weight: 700;
+  src: url("/fonts/Inter-Bold.woff2") format("woff2"),
+       url("/fonts/Inter-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: 'Inter UI';
+  font-style:  italic;
+  font-weight: 700;
+  src: url("/fonts/Inter-BoldItalic.woff2") format("woff2"),
+       url("/fonts/Inter-BoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter UI';
+  font-style:  normal;
+  font-weight: 800;
+  src: url("/fonts/Inter-ExtraBold.woff2") format("woff2"),
+       url("/fonts/Inter-ExtraBold.woff") format("woff");
+}
+@font-face {
+  font-family: 'Inter UI';
+  font-style:  italic;
+  font-weight: 800;
+  src: url("/fonts/Inter-ExtraBoldItalic.woff2") format("woff2"),
+       url("/fonts/Inter-ExtraBoldItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Inter UI';
+  font-style:  normal;
+  font-weight: 900;
+  src: url("/fonts/Inter-Black.woff2") format("woff2"),
+       url("/fonts/Inter-Black.woff") format("woff");
+}
+@font-face {
+  font-family: 'Inter UI';
+  font-style:  italic;
+  font-weight: 900;
+  src: url("/fonts/Inter-BlackItalic.woff2") format("woff2"),
+       url("/fonts/Inter-BlackItalic.woff") format("woff");
+}
+
+/* --------------------------------------------------------------------------
+Single variable font.
+
+Note that you may want to do something like this to make sure you're serving
+constant fonts to older browsers:
+html {
+  font-family: 'Inter UI', sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter UI var', sans-serif;
+  }
+}
+
+BUGS:
+- Safari 12.0 will default to italic instead of regular when font-weight
+  is provided in a @font-face declaration.
+  Workaround: Use "Inter UI var alt" for Safari, or explicitly set
+  `font-variation-settings:"slnt" DEGREE`.
+*/
+@font-face {
+  font-family: 'Inter UI var';
+  font-weight: 100 900;
+  font-style: oblique 0deg 10deg;
+  src: url("/fonts/Inter.var.woff2") format("woff2");
+}
+
+/* --------------------------------------------------------------------------
+
+"Inter UI var alt" is recommended for Safari and Edge, for reliable italics.
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter UI var alt', sans-serif;
+  }
+}
+
+*/
+@font-face {
+  font-family: 'Inter UI var alt';
+  font-weight: 100 900;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url("/fonts/Inter-roman.var.woff2") format("woff2");
+}
+@font-face {
+  font-family: 'Inter UI var alt';
+  font-weight: 100 900;
+  font-style: italic;
+  font-named-instance: 'Italic';
+  src: url("/fonts/Inter-italic.var.woff2") format("woff2");
+}
+
+
+body {
+  /* font-family:'IBM Plex Sans', sans-serif; */
+  font-size: 1.1em;
+}
+
+input[type=submit],
+button[type=submit],
+button:not([disabled]) {
+  background: var(--primary);
+}
+input[type=submit]:hover,
+button[type=submit]:hover,
+button:not([disabled]):hover {
+  background: var(--primary-dark);
+}
+
+dd + dt {
+  border-top: 1px solid var(--primary);
+}
+
+blockquote {
+  border-left: 1px solid var(--primary);
+}
+
+mark {
+  background: var(--primary);
+}
+
+a {
+  color: var(--primary);
+}
+
+table {
+  display: inline-block;
+  border-spacing: 0;
+  border-collapse: collapse;
+  overflow-x: auto;
+  max-width: 100%;
+  text-align: left;
+  vertical-align: top;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
+
+/* code highlighting override */
+
+.warning::before{
+  content: "WARNING";
+  text-decoration: underline;
+  font-weight: bold;
+  color: #ff7900;
+}
+
+.danger:before{
+  content: "DANGER";
+  text-decoration: underline;
+  font-weight: bold;
+  color: #c00;
+}
+
+.tip:before{
+  content: "TIP";
+  text-decoration: underline;
+  font-weight: bold;
+  color: #42b983;
+}
+
+.warning {
+	padding: .1rem 1.5rem .1rem 1.5rem;
+	border-left-width: .5rem;
+	border-left-style: solid;
+	margin: 1rem 0;
+	border-color: #ff7900;
+}
+
+.danger {
+	padding: .1rem 1.5rem .1rem 1.5rem;
+	border-left-width: .5rem;
+	border-left-style: solid;
+	margin: 1rem 0;
+	border-color: #c00;
+}
+
+.tip {
+	padding: .1rem 1.5rem .1rem 1.5rem;
+	border-left-width: .5rem;
+	border-left-style: solid;
+	margin: 1rem 0;
+	border-color: #42b983;
+}
+
+.katex-html{
+  display: none;
+}
+
+.iconrow > a {
+  margin: 1em;
+}
+
+.table-of-contents::before{
+  display: inline-block;
+  content: "Table Of Contents";
+  margin-bottom: 1em;
+  text-decoration: underline;
+  text-decoration-color: gold;
+  font-weight: bold; 
+}
+
+.table-of-contents {
+	padding: .1rem 1.5rem .1rem 1.5rem;
+	border-left-width: .1rem;
+	border-left-style: solid;
+	margin: 1rem 0;
+	border-color: gold;
+}
+
+img {
+  height: auto;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 2.5rem; 
+  box-shadow:large;
+}
+
+
+/*
+Night Owl for highlight.js (c) Carl Baxter <carl@cbax.tech>
+An adaptation of Sarah Drasner's Night Owl VS Code Theme 
+https://github.com/sdras/night-owl-vscode-theme 
+Copyright (c) 2018 Sarah Drasner
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #111;
+  color: #d6deeb;
+  border-radius: 0.2em;
+}
+
+/* General Purpose */
+.hljs-keyword {
+  color: #c792ea;
+  font-style: italic;
+}
+.hljs-built_in {
+  color: #addb67;
+  font-style: italic;
+}
+.hljs-type {
+  color: #82aaff;
+}
+.hljs-literal {
+  color: #ff5874;
+}
+.hljs-number {
+  color: #F78C6C;
+}
+.hljs-regexp {
+  color: #5ca7e4;
+}
+.hljs-string {
+  color: #ecc48d;
+}
+.hljs-subst {
+  color: #d3423e;
+}
+.hljs-symbol {
+  color: #82aaff;
+}
+.hljs-class {
+  color: #ffcb8b;
+}
+.hljs-function {
+  color: #82AAFF;
+}
+.hljs-title {
+  color: #DCDCAA;
+  font-style: italic;
+}
+.hljs-params {
+  color: #7fdbca;
+}
+
+/* Meta */
+.hljs-comment {
+  color: #637777;
+  font-style: italic;
+}
+.hljs-doctag {
+  color: #7fdbca;
+}
+.hljs-meta {
+  color: #82aaff;
+}
+.hljs-meta-keyword {
+  color: #82aaff;
+}
+.hljs-meta-string {
+  color: #ecc48d;
+}
+
+/* Tags, attributes, config */
+.hljs-section {
+  color: #82b1ff;
+}
+.hljs-tag,
+.hljs-name,
+.hljs-builtin-name {
+  color: #7fdbca;
+}
+.hljs-attr {
+  color: #7fdbca;
+}
+.hljs-attribute {
+  color: #80cbc4;
+}
+.hljs-variable {
+  color: #addb67;
+}
+
+/* Markup */
+.hljs-bullet {
+  color: #d9f5dd;
+}
+.hljs-code {
+  color: #80CBC4;
+}
+.hljs-emphasis {
+  color: #c792ea;
+  font-style: italic;
+}
+.hljs-strong {
+  color: #addb67;
+  font-weight: bold;
+}
+.hljs-formula {
+  color: #c792ea;
+}
+.hljs-link {
+  color: #ff869a;
+}
+.hljs-quote {
+  color: #697098;
+  font-style: italic;
+}
+
+/* CSS */
+.hljs-selector-tag {
+  color: #ff6363;
+}
+
+.hljs-selector-id {
+  color: #fad430;
+}
+
+.hljs-selector-class {
+  color: #addb67;
+  font-style: italic;
+}
+
+.hljs-selector-attr,
+.hljs-selector-pseudo {
+  color: #c792ea;
+  font-style: italic;
+}
+
+/* Templates */
+.hljs-template-tag {
+  color: #c792ea;
+}
+.hljs-template-variable {
+  color: #addb67;
+}
+
+/* diff */
+.hljs-addition {
+  color: #addb67ff;
+  font-style: italic;
+}
+
+.hljs-deletion {
+  color: #EF535090;
+  font-style: italic;
+}
+
+html{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#postfooter{
+  margin-top: 1em;
+  padding: 1em;
+  border: 1px solid gold;
+  text-align: center;
+}
+
+.pagetitle{
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: var(--primary);
+  margin-top: 0.2em;
+  margin-bottom: 0.3em;
+  word-wrap: break-word;
+}
+
+.commentbox {
+  margin-top: 1em;
+}
+
+.commentbox > h1 {
+  text-decoration:underline;
+  text-decoration-color: gold;
+  text-align: center;
+}
+.tag {
+  margin: 0.5vh;
+}
+
+.footnotes {
+  max-width: 80vw;
+  word-wrap: break-word;
+}
+
+
+hr#two {
+  height: 1px;
+  background: gold;
+  border: none;
+  outline: none;
+  margin: 3em 3em 5em;
+  position: relative;
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, left top, right top, from(#000000), to(gold));
+  background-image: linear-gradient(to right, #000000, gold);
+}
+
+hr#two:before {
+  content: attr(data-symbol);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background: black;
+  color: gold;
+  padding: 0.5em 3em;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 90%;
+  width: 20%;
+  padding: 1em;
+  top: 1px;
+}
+
+details {
+  border: 1px solid gold;
+  padding: 0.5em;
+}
+
+summary {
+  text-decoration: underline;
+  text-decoration-color: gold;
+}
+
+.postlist {
+  display: flex;
+  flex-direction: column;
+}
+
+.postlist-post {
+  margin: 0.5em;
+  padding: 0.5em;
+  margin-left: 0.1em;
+  margin-right: 0.1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.postlist-post > time {
+  color: gray;
+}
+
+.postlist-post-description {
+}
+
+.postlist-post > a {
+  font-size: 1.2em;
+}
+
+.taglist {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+.post-hr {
+  background-color: gold;
+  border: 1px solid gold;
+  color: gold;
+}
+
+
+.tag {
+  font-size: .9em;
+  background-color: #2d2d2d;
+  padding: 0.3em;
+  border-radius: 0.1em;
+  margin: 0.3em;
+  text-decoration: none;
+}
+
+.tag > a {
+  margin: 0.1em;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
+body {
+  font-family: 'IBM Plex Sans', monospace;
+}
+
+.ext-content {
+  width: 100%;
+  height: 50vh;
+}
+
+
+.description {
+  font-style: normal;
+}
+
+.grey {
+  color: grey;
+}
+
+.footnote-item {
+  max-width: inherit;
+}
+
+section .footnotes {
+  max-width: 80%;
+}
+
+/* replacement styles for Bahunya CSS */
+body {
+  padding: 4vw;
+  background-color: #000;
+  color: #eee;
+}
+
+#blogheader{ 
+  font-weight: bold;
+  color: var(--primary);
+  text-decoration: none;
+  padding: 0.3em;
+  border-radius: 0.1em;
+  border: none;
+  border-bottom: 1px solid var(--primary);
+  /*background-color: #2d2d2d;*/
+}
+
+.nav-link{
+  padding: 0.3em;
+  border-radius: 0.1em;
+  margin: 0.3em;
+  background-color: #2d2d2d;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+}
+
+blockquote {
+  border-left: 1px solid var(--primary);
+  padding: 0.7em;
+  margin: 0.5em;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-decoration: underline;
+  text-decoration-color: var(--primary)
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+
+h4 {
+  font-size: 1.15em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  margin-top: 1em;
+  font-size: 1em;
+  color: color('stealthy');
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#nav-header {
+  float: left;
+}
+
+#nav-links {
+  text-align: center
+}
+
+.nav-link {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 44em) {
+
+  .nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #nav-header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: none;
+  }
+
+  #blogheader {
+    background-color: none;
+    padding: 1em;
+  }
+
+  #nav-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center
+  }
+
+}
+
+share-widget {
+  padding: 1em;
+  border-radius: 0.5em;
+}
+
+footer {
+  margin-top: 5em;
+  margin-bottom: 1em;
+}
+
+code {
+  background-color: #111;
+  padding: 0.2em;
+  border-radius: 0.1em;
+}

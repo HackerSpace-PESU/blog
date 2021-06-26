@@ -1,0 +1,28 @@
+{
+  "title": "HackerSpace Blog",
+  "url": "https://<< URL HERE >>",
+  "domain": "<< URL HERE >>",
+  "description": "Welcome to HackerSpace PESU's Blog!",
+  "genre": "Insert a schema.org genre",
+  "googleAnalyticsId": "",
+  "feed": {
+    "subtitle": "This is the XML Feed.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "<< URL HERE >>"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "https://<< URL HERE >>/feed/feed.json"
+  },
+  "author": {
+    "name": "HackerSpace PESU",
+    "twitterHandle": "update_me",
+    "github": "<< TODO >>",
+    "dev": "<< DEV.TO >>",
+    "linkedin": "<< LinkedIn >>"
+  },
+  "publisher": {
+    "name": "HackerSpace PESU"
+  }
+}

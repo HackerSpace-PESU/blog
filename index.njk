@@ -1,0 +1,11 @@
+---
+title: Home
+layout: layouts/home.njk
+description: i write stuff
+date: Last Modified
+---
+
+<div id="posts">
+  {% set postslist = collections.posts %}
+  {% include "postslist.njk" %}
+</div>

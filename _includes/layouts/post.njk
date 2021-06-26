@@ -1,0 +1,115 @@
+---
+#layout: layouts/base.njk
+templateClass: tmpl-post
+---
+{% extends "layouts/base.njk" %}
+
+
+{% block extraArticleHeader %}
+   {% set wc = content | striptags | wordcount %}
+   {% set wPerMinute = wc / 240 %}
+   <aside class='grey'>
+     {{ wPerMinute | round }} min read.
+   </aside>
+   <aside class='description'>
+     {{ description }}
+   </aside>
+   <aside class='taglist'>
+     {% for tag in tags %}
+     {% if tag != "posts" %}
+     <a class="tag" href="/tags/{{ tag }}">{{ tag  }}</a> 
+     {% endif %}
+     {% endfor %}
+   </aside>
+{% endblock %}
+
+{% set shareUrl = metadata.url + page.url %}
+
+{% block article %}
+
+
+{{ content | safe }}
+
+
+<div id="postfooter">
+  <p>
+    👋 Hi! Since you've made it this far, 
+    <a href="{{ shareUrl | safe }}" on-click="share">sharing</a> this article on your favorite social network 
+    would be highly appreciated!  For feedback, <a href="mailto:{{ metadata.author.email }}" target="_blank" rel="noopener">write me an email</a> 
+    or leave a comment. Alternatively, check out my <a href='https://www.github.com/{{ metadata.author.github  }}' target="_blank" rel='noopener'> github </a>!
+  </p>
+</div>
+<share-widget>
+  <button on-click="share" aria-label="Share" href="{{ shareUrl | safe }}">
+    <div></div>
+  </button>
+</share-widget>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "{{ title }}",
+  "image": [],
+  "author": "{{ metadata.author.name }}", 
+  "genre": "{{ metadata.genre }}", 
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ metadata.publisher.name }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ '/img/favicon/favicon-192x192.png' | addHash }}"
+    }
+  },
+  "url": "{{ metadata.url }}{{ canonicalUrl or page.url }}",
+  "mainEntityOfPage": "{{ metadata.url }}{{ canonicalUrl or page.url }}",
+  "datePublished": "{{ page.date | htmlDateString }}",
+  "dateModified": "{{ page.inputPath | lastModifiedDate  | htmlDateString }}",
+  "description": "{{ content | striptags | truncate(140) }}"
+}
+</script>
+
+<!-- comments -->
+
+<div class='commentbox' id='comments'>
+  <h1 class='text-center'> Comments </h1>
+  <br>
+  <div id="disqus_thread"></div>
+</div>
+
+<script >
+    /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT 
+     *  THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR 
+     *  PLATFORM OR CMS.
+     *  
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: 
+     *  https://disqus.com/admin/universalcode/#configuration-variables
+     */
+
+    var disqus_config = function () {
+        // Replace PAGE_URL with your page's canonical URL variable
+      this.page.url = "https://blog.anirudhrowjee.xyz{{ page.url  }}";  
+        // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      this.page.identifier = "{{ page.filePathStem }}" ; 
+      this.page.title = "{{ title }}";
+    };
+    
+    (function() {  // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+        var d = document, s = d.createElement('script');
+        
+        // IMPORTANT: Replace EXAMPLE with your forum shortname!
+        s.src = 'https://anirudhrowjeesblog.disqus.com/embed.js';
+        
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>
+    Please enable JavaScript to view the 
+    <a href="https://disqus.com/?ref_noscript" rel="nofollow">
+        comments powered by Disqus.
+    </a>
+</noscript>
+
+{% endblock %}
