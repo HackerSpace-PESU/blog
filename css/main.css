@@ -1,7 +1,8 @@
 /* Color customization */
 :root {
-  --primary: #f9c412;
-  --primary-dark: #E7BF60;
+  --primary: #5efefe;
+  --primary-dark: #01e4e4;
+
 }
 
 .test-dead-code-elimination-sentinel {
@@ -407,7 +408,7 @@ table {
   content: "Table Of Contents";
   margin-bottom: 1em;
   text-decoration: underline;
-  text-decoration-color: gold;
+  text-decoration-color:  var(--primary-dark);
   font-weight: bold; 
 }
 
@@ -416,7 +417,7 @@ table {
 	border-left-width: .1rem;
 	border-left-style: solid;
 	margin: 1rem 0;
-	border-color: gold;
+	border-color: var(--primary-dark);
 }
 
 img {
@@ -613,7 +614,7 @@ html{
 #postfooter{
   margin-top: 1em;
   padding: 1em;
-  border: 1px solid gold;
+  border: 1px solid var(--primary-dark);
   text-align: center;
 }
 
@@ -632,7 +633,7 @@ html{
 
 .commentbox > h1 {
   text-decoration:underline;
-  text-decoration-color: gold;
+  text-decoration-color: var(--primary-dark);
   text-align: center;
 }
 .tag {
@@ -647,14 +648,14 @@ html{
 
 hr#two {
   height: 1px;
-  background: gold;
+  background: var(--primary-dark);
   border: none;
   outline: none;
   margin: 3em 3em 5em;
   position: relative;
   background-size: 100%;
-  background-image: -webkit-gradient(linear, left top, right top, from(#000000), to(gold));
-  background-image: linear-gradient(to right, #000000, gold);
+  background-image: -webkit-gradient(linear, left top, right top, from(#000000), to(var(--primary-dark)));
+  background-image: linear-gradient(to right, #000000, var(--primary-dark));
 }
 
 hr#two:before {
@@ -663,7 +664,7 @@ hr#two:before {
   top: 0;
   left: 50%;
   background: black;
-  color: gold;
+  color: var(--primary-dark);
   padding: 0.5em 3em;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -674,13 +675,13 @@ hr#two:before {
 }
 
 details {
-  border: 1px solid gold;
+  border: 1px solid var(--primary-dark);
   padding: 0.5em;
 }
 
 summary {
   text-decoration: underline;
-  text-decoration-color: gold;
+  text-decoration-color: var(--primary-dark);
 }
 
 .postlist {
@@ -701,8 +702,10 @@ summary {
   color: gray;
 }
 
+/*
 .postlist-post-description {
 }
+*/
 
 .postlist-post > a {
   font-size: 1.2em;
@@ -717,9 +720,9 @@ summary {
 }
 
 .post-hr {
-  background-color: gold;
-  border: 1px solid gold;
-  color: gold;
+  background-color: var(--primary-dark);
+  border: 1px solid var(--primary-dark);
+  color: var(--primary-dark);
 }
 
 
@@ -767,7 +770,9 @@ section .footnotes {
 /* replacement styles for Bahunya CSS */
 body {
   padding: 4vw;
-  background-color: #000;
+  /* background: linear-gradient(to bottom left, #000000, #002c66); */
+  background-color: #001634;
+  background-repeat: no-repeat;
   color: #eee;
 }
 
