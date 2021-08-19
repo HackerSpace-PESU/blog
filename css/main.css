@@ -365,12 +365,12 @@ tr {
   transition: background 0.2s ease-in-out;
 }
 
-tr:hover {
-  background: #042e68;
-}
-
 tr:nth-of-type(even) {
   background: #03214c;
+}
+
+tr:hover {
+  background: #042e68;
 }
 
 tbody > tr:last-of-type {
