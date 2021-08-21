@@ -1,0 +1,12 @@
+---
+title: People
+layout: layouts/home.njk
+permalink: /people/
+eleventyNavigation:
+  key: People
+  order: 4
+---
+<h3> These are the various People of HackerSpace. </h3>
+
+{% set postslist = collections.people %}
+{% include "postslist.njk" %}

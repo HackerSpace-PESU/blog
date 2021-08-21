@@ -4,9 +4,9 @@ date: 2021-07-05
 description: A brief blog on what steps to follow when entering the world of Web Development for the first time.
 image: ""
 tags: 
-  - Web Development
-  - Front End
-  - Back End
+  - WebDev
+  - FrontEnd
+  - BackEnd
 lastUpdated: 2021-07-05
 ---
 <!-- ![](../../img/WebDevImg/starter.png) -->
