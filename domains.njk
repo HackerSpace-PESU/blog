@@ -1,0 +1,13 @@
+---
+title: Domains
+layout: layouts/home.njk
+permalink: /domains/
+eleventyNavigation:
+  key: Domains
+  order: 5
+---
+
+<h3> These are the various domains of HackerSpace. </h3>
+
+{% set postslist = collections.domains %}
+{% include "domainlist.njk" %}
