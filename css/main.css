@@ -1,12 +1,7 @@
 /* Color customization */
 :root {
-  --primary: #00D1FF;
-  --primary-dark: #00D1FF;
-
-  --background-primary: #001634;
-  --background-secondary: #3F3F3F;
-
-  --tags-background: #2d2d2d;
+  --primary: #5efefe;
+  --primary-dark: #01e4e4;
 
 }
 
@@ -695,8 +690,6 @@ summary {
 }
 
 .postlist-post {
-  background-color: var(--background-secondary);
-  border-radius: 0.5em;
   margin: 0.5em;
   padding: 0.5em;
   margin-left: 0.1em;
@@ -735,7 +728,7 @@ summary {
 
 .tag {
   font-size: .9em;
-  background-color: var(--tags-background);
+  background-color: #2d2d2d;
   padding: 0.3em;
   border-radius: 0.1em;
   margin: 0.3em;
@@ -778,7 +771,7 @@ section .footnotes {
 body {
   padding: 4vw;
   /* background: linear-gradient(to bottom left, #000000, #002c66); */
-  background-color: var(--background-primary);
+  background-color: #001634;
   background-repeat: no-repeat;
   color: #eee;
 }
@@ -796,9 +789,9 @@ body {
 
 .nav-link{
   padding: 0.3em;
-  border-radius: 0.5em;
+  border-radius: 0.1em;
   margin: 0.3em;
-  background-color: var(--background-secondary);
+  background-color: #2d2d2d;
   text-decoration: none;
 }
 
