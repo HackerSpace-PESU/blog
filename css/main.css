@@ -709,7 +709,9 @@ summary {
   text-decoration: none;
   padding-bottom: 4px;
 }
-
+.post-tag {
+  text-decoration: none;
+}
 .taglist {
   display: flex;
   flex-direction: row;
@@ -735,6 +737,7 @@ summary {
 
 .tag > a {
   margin: 0.1em;
+  text-decoration: none;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap");
