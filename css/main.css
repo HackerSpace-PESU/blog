@@ -64,7 +64,7 @@ share-widget div {
 
 share-widget button {
   padding: 1em;
-  border-radius: 0.3em;  
+  border-radius: 0.3em;
   margin: 0;
 }
 
@@ -331,7 +331,8 @@ mark {
 }
 
 a {
-  color: var(--primary);
+/*  color: var(--primary); */
+  color: #E1D9D1;
 }
 
 table {
@@ -409,7 +410,7 @@ table {
   margin-bottom: 1em;
   text-decoration: underline;
   text-decoration-color:  var(--primary-dark);
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 .table-of-contents {
@@ -424,15 +425,15 @@ img {
   height: auto;
   width: 100%;
   margin-top: 0px;
-  margin-bottom: 2.5rem; 
+  margin-bottom: 2.5rem;
   box-shadow:large;
 }
 
 
 /*
 Night Owl for highlight.js (c) Carl Baxter <carl@cbax.tech>
-An adaptation of Sarah Drasner's Night Owl VS Code Theme 
-https://github.com/sdras/night-owl-vscode-theme 
+An adaptation of Sarah Drasner's Night Owl VS Code Theme
+https://github.com/sdras/night-owl-vscode-theme
 Copyright (c) 2018 Sarah Drasner
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -776,7 +777,7 @@ body {
   color: #eee;
 }
 
-#blogheader{ 
+#blogheader{
   font-weight: bold;
   color: var(--primary);
   text-decoration: none;
