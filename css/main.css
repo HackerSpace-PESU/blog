@@ -1,13 +1,12 @@
 /* Color customization */
 :root {
-  --primary: #00D1FF;
-  --primary-dark: #00D1FF;
+  --primary: #00d1ff;
+  --primary-dark: #00d1ff;
 
   --background-primary: #001634;
-  --background-secondary: #07031C;
+  --background-secondary: #07031c;
 
   --tags-background: #2d2d2d;
-
 }
 
 .test-dead-code-elimination-sentinel {
@@ -44,7 +43,6 @@ header nav {
 /*! purgecss end ignore */
 
 share-widget {
-
   position: fixed;
   /*
   left: 77vw;
@@ -58,18 +56,18 @@ share-widget {
 share-widget div {
   width: 30px;
   height: 30px;
-  background-image: url('/img/share.svg');
+  background-image: url("/img/share.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .apple share-widget div {
-  background-image: url('/img/share-apple.svg');
+  background-image: url("/img/share-apple.svg");
 }
 
 share-widget button {
   padding: 1em;
-  border-radius: 0.3em;  
+  border-radius: 0.3em;
   margin: 0;
 }
 
@@ -92,7 +90,7 @@ img[align="left"] {
 
 dl {
   clear: both;
-  display: block!important;
+  display: block !important;
 }
 
 header aside {
@@ -107,150 +105,147 @@ header aside {
   display: flex;
 }
 
-
-
 #posts li {
   margin-bottom: 0.5em;
 }
-
 
 #posts {
   margin-top: 2em;
 }
 
 @font-face {
-  font-family: 'Inter UI';
-  font-style:  normal;
+  font-family: "Inter UI";
+  font-style: normal;
   font-weight: 100;
   src: url("/fonts/Inter-Thin.woff2") format("woff2"),
-       url("/fonts/Inter-Thin.woff") format("woff");
+    url("/fonts/Inter-Thin.woff") format("woff");
 }
 @font-face {
-  font-family: 'Inter UI';
-  font-style:  italic;
+  font-family: "Inter UI";
+  font-style: italic;
   font-weight: 100;
   src: url("/fonts/Inter-ThinItalic.woff2") format("woff2"),
-       url("/fonts/Inter-ThinItalic.woff") format("woff");
+    url("/fonts/Inter-ThinItalic.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Inter UI';
-  font-style:  normal;
+  font-family: "Inter UI";
+  font-style: normal;
   font-weight: 200;
   src: url("/fonts/Inter-ExtraLight.woff2") format("woff2"),
-       url("/fonts/Inter-ExtraLight.woff") format("woff");
+    url("/fonts/Inter-ExtraLight.woff") format("woff");
 }
 @font-face {
-  font-family: 'Inter UI';
-  font-style:  italic;
+  font-family: "Inter UI";
+  font-style: italic;
   font-weight: 200;
   src: url("/fonts/Inter-ExtraLightItalic.woff2") format("woff2"),
-       url("/fonts/Inter-ExtraLightItalic.woff") format("woff");
+    url("/fonts/Inter-ExtraLightItalic.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Inter UI';
-  font-style:  normal;
+  font-family: "Inter UI";
+  font-style: normal;
   font-weight: 300;
   src: url("/fonts/Inter-Light.woff2") format("woff2"),
-       url("/fonts/Inter-Light.woff") format("woff");
+    url("/fonts/Inter-Light.woff") format("woff");
 }
 @font-face {
-  font-family: 'Inter UI';
-  font-style:  italic;
+  font-family: "Inter UI";
+  font-style: italic;
   font-weight: 300;
   src: url("/fonts/Inter-LightItalic.woff2") format("woff2"),
-       url("/fonts/Inter-LightItalic.woff") format("woff");
+    url("/fonts/Inter-LightItalic.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Inter UI';
-  font-style:  normal;
+  font-family: "Inter UI";
+  font-style: normal;
   font-weight: 400;
   src: url("/fonts/Inter-Regular.woff2") format("woff2"),
-       url("/fonts/Inter-Regular.woff") format("woff");
+    url("/fonts/Inter-Regular.woff") format("woff");
 }
 @font-face {
-  font-family: 'Inter UI';
-  font-style:  italic;
+  font-family: "Inter UI";
+  font-style: italic;
   font-weight: 400;
   src: url("/fonts/Inter-Italic.woff2") format("woff2"),
-       url("/fonts/Inter-Italic.woff") format("woff");
+    url("/fonts/Inter-Italic.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Inter UI';
-  font-style:  normal;
+  font-family: "Inter UI";
+  font-style: normal;
   font-weight: 500;
   src: url("/fonts/Inter-Medium.woff2") format("woff2"),
-       url("/fonts/Inter-Medium.woff") format("woff");
+    url("/fonts/Inter-Medium.woff") format("woff");
 }
 @font-face {
-  font-family: 'Inter UI';
-  font-style:  italic;
+  font-family: "Inter UI";
+  font-style: italic;
   font-weight: 500;
   src: url("/fonts/Inter-MediumItalic.woff2") format("woff2"),
-       url("/fonts/Inter-MediumItalic.woff") format("woff");
+    url("/fonts/Inter-MediumItalic.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Inter UI';
-  font-style:  normal;
+  font-family: "Inter UI";
+  font-style: normal;
   font-weight: 600;
   src: url("/fonts/Inter-SemiBold.woff2") format("woff2"),
-       url("/fonts/Inter-SemiBold.woff") format("woff");
+    url("/fonts/Inter-SemiBold.woff") format("woff");
 }
 @font-face {
-  font-family: 'Inter UI';
-  font-style:  italic;
+  font-family: "Inter UI";
+  font-style: italic;
   font-weight: 600;
   src: url("/fonts/Inter-SemiBoldItalic.woff2") format("woff2"),
-       url("/fonts/Inter-SemiBoldItalic.woff") format("woff");
+    url("/fonts/Inter-SemiBoldItalic.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Inter UI';
-  font-style:  normal;
+  font-family: "Inter UI";
+  font-style: normal;
   font-weight: 700;
   src: url("/fonts/Inter-Bold.woff2") format("woff2"),
-       url("/fonts/Inter-Bold.woff") format("woff");
+    url("/fonts/Inter-Bold.woff") format("woff");
 }
 @font-face {
-  font-family: 'Inter UI';
-  font-style:  italic;
+  font-family: "Inter UI";
+  font-style: italic;
   font-weight: 700;
   src: url("/fonts/Inter-BoldItalic.woff2") format("woff2"),
-       url("/fonts/Inter-BoldItalic.woff") format("woff");
+    url("/fonts/Inter-BoldItalic.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Inter UI';
-  font-style:  normal;
+  font-family: "Inter UI";
+  font-style: normal;
   font-weight: 800;
   src: url("/fonts/Inter-ExtraBold.woff2") format("woff2"),
-       url("/fonts/Inter-ExtraBold.woff") format("woff");
+    url("/fonts/Inter-ExtraBold.woff") format("woff");
 }
 @font-face {
-  font-family: 'Inter UI';
-  font-style:  italic;
+  font-family: "Inter UI";
+  font-style: italic;
   font-weight: 800;
   src: url("/fonts/Inter-ExtraBoldItalic.woff2") format("woff2"),
-       url("/fonts/Inter-ExtraBoldItalic.woff") format("woff");
+    url("/fonts/Inter-ExtraBoldItalic.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Inter UI';
-  font-style:  normal;
+  font-family: "Inter UI";
+  font-style: normal;
   font-weight: 900;
   src: url("/fonts/Inter-Black.woff2") format("woff2"),
-       url("/fonts/Inter-Black.woff") format("woff");
+    url("/fonts/Inter-Black.woff") format("woff");
 }
 @font-face {
-  font-family: 'Inter UI';
-  font-style:  italic;
+  font-family: "Inter UI";
+  font-style: italic;
   font-weight: 900;
   src: url("/fonts/Inter-BlackItalic.woff2") format("woff2"),
-       url("/fonts/Inter-BlackItalic.woff") format("woff");
+    url("/fonts/Inter-BlackItalic.woff") format("woff");
 }
 
 /* --------------------------------------------------------------------------
@@ -274,7 +269,7 @@ BUGS:
   `font-variation-settings:"slnt" DEGREE`.
 */
 @font-face {
-  font-family: 'Inter UI var';
+  font-family: "Inter UI var";
   font-weight: 100 900;
   font-style: oblique 0deg 10deg;
   src: url("/fonts/Inter.var.woff2") format("woff2");
@@ -292,33 +287,32 @@ BUGS:
 
 */
 @font-face {
-  font-family: 'Inter UI var alt';
+  font-family: "Inter UI var alt";
   font-weight: 100 900;
   font-style: normal;
-  font-named-instance: 'Regular';
+  font-named-instance: "Regular";
   src: url("/fonts/Inter-roman.var.woff2") format("woff2");
 }
 @font-face {
-  font-family: 'Inter UI var alt';
+  font-family: "Inter UI var alt";
   font-weight: 100 900;
   font-style: italic;
-  font-named-instance: 'Italic';
+  font-named-instance: "Italic";
   src: url("/fonts/Inter-italic.var.woff2") format("woff2");
 }
-
 
 body {
   /* font-family:'IBM Plex Sans', sans-serif; */
   font-size: 1.1em;
 }
 
-input[type=submit],
-button[type=submit],
+input[type="submit"],
+button[type="submit"],
 button:not([disabled]) {
   background: var(--primary);
 }
-input[type=submit]:hover,
-button[type=submit]:hover,
+input[type="submit"]:hover,
+button[type="submit"]:hover,
 button:not([disabled]):hover {
   background: var(--primary-dark);
 }
@@ -355,21 +349,21 @@ table {
 
 /* code highlighting override */
 
-.warning::before{
+.warning::before {
   content: "WARNING";
   text-decoration: underline;
   font-weight: bold;
   color: #ff7900;
 }
 
-.danger:before{
+.danger:before {
   content: "DANGER";
   text-decoration: underline;
   font-weight: bold;
   color: #c00;
 }
 
-.tip:before{
+.tip:before {
   content: "TIP";
   text-decoration: underline;
   font-weight: bold;
@@ -377,30 +371,30 @@ table {
 }
 
 .warning {
-	padding: .1rem 1.5rem .1rem 1.5rem;
-	border-left-width: .5rem;
-	border-left-style: solid;
-	margin: 1rem 0;
-	border-color: #ff7900;
+  padding: 0.1rem 1.5rem 0.1rem 1.5rem;
+  border-left-width: 0.5rem;
+  border-left-style: solid;
+  margin: 1rem 0;
+  border-color: #ff7900;
 }
 
 .danger {
-	padding: .1rem 1.5rem .1rem 1.5rem;
-	border-left-width: .5rem;
-	border-left-style: solid;
-	margin: 1rem 0;
-	border-color: #c00;
+  padding: 0.1rem 1.5rem 0.1rem 1.5rem;
+  border-left-width: 0.5rem;
+  border-left-style: solid;
+  margin: 1rem 0;
+  border-color: #c00;
 }
 
 .tip {
-	padding: .1rem 1.5rem .1rem 1.5rem;
-	border-left-width: .5rem;
-	border-left-style: solid;
-	margin: 1rem 0;
-	border-color: #42b983;
+  padding: 0.1rem 1.5rem 0.1rem 1.5rem;
+  border-left-width: 0.5rem;
+  border-left-style: solid;
+  margin: 1rem 0;
+  border-color: #42b983;
 }
 
-.katex-html{
+.katex-html {
   display: none;
 }
 
@@ -408,31 +402,30 @@ table {
   margin: 1em;
 }
 
-.table-of-contents::before{
+.table-of-contents::before {
   display: inline-block;
   content: "Table Of Contents";
   margin-bottom: 1em;
   text-decoration: underline;
-  text-decoration-color:  var(--primary-dark);
-  font-weight: bold; 
+  text-decoration-color: var(--primary-dark);
+  font-weight: bold;
 }
 
 .table-of-contents {
-	padding: .1rem 1.5rem .1rem 1.5rem;
-	border-left-width: .1rem;
-	border-left-style: solid;
-	margin: 1rem 0;
-	border-color: var(--primary-dark);
+  padding: 0.1rem 1.5rem 0.1rem 1.5rem;
+  border-left-width: 0.1rem;
+  border-left-style: solid;
+  margin: 1rem 0;
+  border-color: var(--primary-dark);
 }
 
 img {
   height: auto;
   width: 100%;
   margin-top: 0px;
-  margin-bottom: 2.5rem; 
-  box-shadow:large;
+  margin-bottom: 2.5rem;
+  box-shadow: large;
 }
-
 
 /*
 Night Owl for highlight.js (c) Carl Baxter <carl@cbax.tech>
@@ -460,7 +453,7 @@ SOFTWARE.
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  background: #111;
+  background: #2a2a2c;
   color: #d6deeb;
   border-radius: 0.2em;
 }
@@ -481,7 +474,7 @@ SOFTWARE.
   color: #ff5874;
 }
 .hljs-number {
-  color: #F78C6C;
+  color: #f78c6c;
 }
 .hljs-regexp {
   color: #5ca7e4;
@@ -499,10 +492,10 @@ SOFTWARE.
   color: #ffcb8b;
 }
 .hljs-function {
-  color: #82AAFF;
+  color: #82aaff;
 }
 .hljs-title {
-  color: #DCDCAA;
+  color: #dcdcaa;
   font-style: italic;
 }
 .hljs-params {
@@ -551,7 +544,7 @@ SOFTWARE.
   color: #d9f5dd;
 }
 .hljs-code {
-  color: #80CBC4;
+  color: #80cbc4;
 }
 .hljs-emphasis {
   color: #c792ea;
@@ -607,23 +600,23 @@ SOFTWARE.
 }
 
 .hljs-deletion {
-  color: #EF535090;
+  color: #ef535090;
   font-style: italic;
 }
 
-html{
+html {
   max-width: 100%;
   overflow-x: hidden;
 }
 
-#postfooter{
+#postfooter {
   margin-top: 1em;
   padding: 1em;
   border: 1px solid var(--primary-dark);
   text-align: center;
 }
 
-.pagetitle{
+.pagetitle {
   color: white;
   text-decoration: underline;
   text-decoration-color: var(--primary);
@@ -637,19 +630,15 @@ html{
 }
 
 .commentbox > h1 {
-  text-decoration:underline;
+  text-decoration: underline;
   text-decoration-color: var(--primary-dark);
   text-align: center;
-}
-.tag {
-  margin: 0.5vh;
 }
 
 .footnotes {
   max-width: 80vw;
   word-wrap: break-word;
 }
-
 
 hr#two {
   height: 1px;
@@ -659,7 +648,13 @@ hr#two {
   margin: 3em 3em 5em;
   position: relative;
   background-size: 100%;
-  background-image: -webkit-gradient(linear, left top, right top, from(#000000), to(var(--primary-dark)));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#000000),
+    to(var(--primary-dark))
+  );
   background-image: linear-gradient(to right, #000000, var(--primary-dark));
 }
 
@@ -697,10 +692,7 @@ summary {
 .postlist-post {
   background-color: var(--background-secondary);
   border-radius: 0.5em;
-  margin: 0.5em;
-  padding: 0.5em;
-  margin-left: 0.1em;
-  margin-right: 0.1em;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
 }
@@ -722,8 +714,8 @@ summary {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-top: 0.3em;
-  margin-bottom: 0.3em;
+  margin-top: 0.5rem;
+  gap: 0.75rem;
 }
 
 .post-hr {
@@ -732,31 +724,23 @@ summary {
   color: var(--primary-dark);
 }
 
-
 .tag {
-  font-size: .9em;
+  font-size: 0.9em;
   background-color: var(--tags-background);
   padding: 0.3em;
   border-radius: 0.1em;
-  margin: 0.3em;
   text-decoration: none;
 }
 
-.tag > a {
-  margin: 0.1em;
-}
-
-
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap");
 body {
-  font-family: 'IBM Plex Sans', monospace;
+  font-family: "IBM Plex Sans", monospace;
 }
 
 .ext-content {
   width: 100%;
   height: 50vh;
 }
-
 
 .description {
   font-style: normal;
@@ -776,6 +760,8 @@ section .footnotes {
 
 /* replacement styles for Bahunya CSS */
 body {
+  max-width: 960px;
+  margin: 0 auto;
   padding: 4vw;
   /* background: linear-gradient(to bottom left, #000000, #002c66); */
   background-color: var(--background-primary);
@@ -783,7 +769,7 @@ body {
   color: #eee;
 }
 
-#blogheader{ 
+#blogheader {
   font-weight: bold;
   color: var(--primary);
   text-decoration: none;
@@ -794,10 +780,10 @@ body {
   /*background-color: #2d2d2d;*/
 }
 
-.nav-link{
+.nav-link {
   padding: 0.3em;
   border-radius: 0.5em;
-  margin: 0.3em;
+  margin: 0.3rem 0;
   background-color: var(--background-secondary);
   text-decoration: none;
 }
@@ -814,9 +800,14 @@ blockquote {
   padding-bottom: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-decoration: underline;
-  text-decoration-color: var(--primary)
+  text-decoration-color: var(--primary);
 }
 
 h1 {
@@ -842,7 +833,7 @@ h5 {
 h6 {
   margin-top: 1em;
   font-size: 1em;
-  color: color('stealthy');
+  color: color("stealthy");
 }
 
 .nav {
@@ -856,7 +847,7 @@ h6 {
 }
 
 #nav-links {
-  text-align: center
+  text-align: center;
 }
 
 .nav-link {
@@ -864,7 +855,6 @@ h6 {
 }
 
 @media screen and (max-width: 44em) {
-
   .nav {
     width: 100%;
     display: flex;
@@ -886,9 +876,8 @@ h6 {
   #nav-links {
     display: flex;
     flex-direction: column;
-    text-align: center
+    text-align: center;
   }
-
 }
 
 share-widget {
@@ -907,17 +896,20 @@ code {
   border-radius: 0.1em;
 }
 
-.centerImage{
+.centerImage {
   width: 40em;
   justify-self: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-@media only screen and (max-width: 1100px)
-{
-  .centerImage{
-    height:auto;
+
+@media only screen and (max-width: 1100px) {
+  body {
+    max-width: unset;
+  }
+  .centerImage {
+    height: auto;
     width: 100%;
   }
 }
