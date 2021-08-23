@@ -1,7 +1,12 @@
 /* Color customization */
 :root {
-  --primary: #5efefe;
-  --primary-dark: #01e4e4;
+  --primary: #00d1ff;
+  --primary-dark: #00d1ff;
+
+  --background-primary: #001634;
+  --background-secondary: #07031c;
+
+  --tags-background: #2d2d2d;
 }
 
 .test-dead-code-elimination-sentinel {
@@ -450,7 +455,7 @@ td {
   content: "Table Of Contents";
   margin-bottom: 1em;
   text-decoration: underline;
-  text-decoration-color: var(--primary-dark);
+  text-decoration-color:  var(--primary-dark);
   font-weight: bold;
 }
 
@@ -467,7 +472,7 @@ img {
   width: 100%;
   margin-top: 0px;
   margin-bottom: 2.5rem;
-  box-shadow: large;
+  box-shadow:large;
 }
 
 /*
@@ -773,15 +778,11 @@ summary {
 
 .tag {
   font-size: 0.9em;
-  background-color: #2d2d2d;
+  background-color: var(--tags-background);
   padding: 0.3em;
   border-radius: 0.1em;
   margin: 0.3em;
   text-decoration: none;
-}
-
-.tag > a {
-  margin: 0.1em;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap");
@@ -819,7 +820,7 @@ body {
   color: #eee;
 }
 
-#blogheader {
+#blogheader{
   font-weight: bold;
   color: var(--primary);
   text-decoration: none;
@@ -928,17 +929,6 @@ h6 {
     flex-direction: column;
     text-align: center;
   }
-  table {
-    overflow: scroll;
-  }
-  th {
-    font-size: 1em;
-    padding: 1rem;
-  }
-  td {
-    font-size: 0.95em;
-    padding: 1rem;
-  }
 }
 
 share-widget {
@@ -965,6 +955,9 @@ code {
   margin-right: auto;
 }
 @media only screen and (max-width: 1100px) {
+  body {
+    max-width: unset;
+  }
   .centerImage {
     height: auto;
     width: 100%;
