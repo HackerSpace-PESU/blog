@@ -407,7 +407,7 @@ table {
   content: "Table Of Contents";
   margin-bottom: 1em;
   text-decoration: underline;
-  text-decoration-color: var(--primary-dark);
+  text-decoration-color:  var(--primary-dark);
   font-weight: bold;
 }
 
@@ -424,7 +424,7 @@ img {
   width: 100%;
   margin-top: 0px;
   margin-bottom: 2.5rem;
-  box-shadow: large;
+  box-shadow:large;
 }
 
 /*
@@ -769,7 +769,7 @@ body {
   color: #eee;
 }
 
-#blogheader {
+#blogheader{
   font-weight: bold;
   color: var(--primary);
   text-decoration: none;
