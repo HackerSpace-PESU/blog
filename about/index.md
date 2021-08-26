@@ -7,7 +7,11 @@ eleventyNavigation:
   order: 3
 ---
 
-About HackerSpace
+<div id="discordInviteBox"></div>
+
+### About HackerSpace
+
+HackerSpace is a student-powered development community spanning the two campuses of PES University!
 
 ### The Blog 
 

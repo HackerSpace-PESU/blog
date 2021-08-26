@@ -15,6 +15,7 @@ const md_toc = require('markdown-it-toc-done-right')
 const md_highlight = require('markdown-it-highlightjs');
 const md_katex = require('markdown-it-katex');
 const md_hlline = require('markdown-it-highlight-lines');
+const md_container = require('markdown-it-container')
 
 // other stuff
 const localImages = require("./third_party/eleventy-plugin-local-images/.eleventy.js");
@@ -137,10 +138,10 @@ module.exports = function (eleventyConfig) {
     permalinkClass: "direct-link",
     permalinkSymbol: "#",
   })
-    .use(require('@gerhobbelt/markdown-it-container'), 'spoiler', options)
-    .use(require('@gerhobbelt/markdown-it-container'), 'warning')
-    .use(require('@gerhobbelt/markdown-it-container'), 'danger')
-    .use(require('@gerhobbelt/markdown-it-container'), 'tip')
+    .use(md_container, 'spoiler', options)
+    .use(md_container, 'warning')
+    .use(md_container, 'danger')
+    .use(md_container, 'tip')
     .use(md_emoji)
     .use(md_toc)
     .use(md_footnote)
