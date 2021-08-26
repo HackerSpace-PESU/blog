@@ -1,26 +1,26 @@
 {
   "title": "HackerSpace Blog",
-  "url": "https://<< URL HERE >>",
-  "domain": "<< URL HERE >>",
+  "url": "https://youthful-goodall-5102fc.netlify.app/",
+  "domain": "https://youthful-goodall-5102fc.netlify.app/",
   "description": "Welcome to HackerSpace PESU's Blog!",
   "genre": "Insert a schema.org genre",
-  "googleAnalyticsId": "",
+  "googleAnalyticsId": "G-ZECGD98FKQ",
   "feed": {
     "subtitle": "This is the XML Feed.",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "<< URL HERE >>"
+    "id": "https://youthful-goodall-5102fc.netlify.app/"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
-    "url": "https://<< URL HERE >>/feed/feed.json"
+    "url": "https://youthful-goodall-5102fc.netlify.app/feed/feed.json"
   },
   "author": {
     "name": "HackerSpace PESU",
-    "twitterHandle": "update_me",
-    "github": "<< TODO >>",
-    "dev": "<< DEV.TO >>",
-    "linkedin": "<< LinkedIn >>"
+    "twitterHandle": "peshackerspace",
+    "github": "HackerSpace-PESU",
+    "discord": "vQxFRbYjBJ",
+    "linkedin": "company/hackerspace-pesu/"
   },
   "publisher": {
     "name": "HackerSpace PESU"

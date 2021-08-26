@@ -58,6 +58,7 @@
     "image-size": "^0.8.3",
     "jimp": "^0.16.1",
     "lru-cache": "^5.1.1",
+    "markdown-it-container": "^3.0.0",
     "markdown-it-emoji": "^1.4.0",
     "markdown-it-footnote": "^3.0.2",
     "markdown-it-highlight-lines": "^1.0.2",
