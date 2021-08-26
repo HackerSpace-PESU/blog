@@ -3,6 +3,10 @@ title: Machine Learning
 Author: Sammith Bharadwaj
 ---
 
+::: tip
+This article was written by Sammith Bharadwaj, who you can find on our Discord Server!
+:::
+
 There has been a vast increase in the hype as well as the demand for Machine Learning over the last century, especially in the last few years. With the advent of powerful computational machines, ideas once imagined decades ago are now being implemented in reality.
 
 But is Machine Learning really that groundbreaking? Is it overrated or does it deserve the hype? Are we glorifying basic statistics?
