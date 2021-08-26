@@ -742,6 +742,7 @@ summary {
   background-color: var(--background-secondary);
   border-radius: 0.5em;
   padding: 1rem;
+  margin: 0.5rem;
   display: flex;
   flex-direction: column;
 }
@@ -783,7 +784,7 @@ summary {
 
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap");
 body {
-  font-family: "Ubuntu Mono", monospace;
+  font-family: "Inconsolata", monospace;
 }
 
 .ext-content {

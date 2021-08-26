@@ -2,6 +2,10 @@
 title: Web Development
 ---
 
+::: tip
+This article was written by Daniel Lester Saldanha, who you can find on our Discord Server!
+:::
+
 !["Web Development Road Map"](/img/domains/webdev/101/starter.png)
 
 ## Step 1 : How do Websites Work
