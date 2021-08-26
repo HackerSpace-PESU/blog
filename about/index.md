@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 3
 ---
 
-BOUT ME HERE
+About HackerSpace
 
 ### The Blog 
 

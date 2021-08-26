@@ -1,0 +1,17 @@
+<!-- TODO fix this -->
+<!-- Add Image support to show pictures -->
+
+<div class='postlist'>
+{% for post in postslist | reverse %}
+  <div class='postlist-post'>
+
+      <a href="{{ post.url | url }}">
+        {% if post.data.title %}
+          {{ post.data.title }}
+        {% else %}
+          <code>{{ post.url }}</code>
+        {% endif %}
+      </a>
+  </div>
+{% endfor %}
+</div>

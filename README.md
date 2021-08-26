@@ -1,4 +1,9 @@
-# eleventy-high-performance-blog
+# The HackerSpace Blog
+
+This is the repository for the HackerSpace Blog. 
+
+
+---
 
 ## Deploy Status
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4732a3dd-f958-4e3f-bc20-e2d408b09a90/deploy-status)](https://app.netlify.com/sites/affectionate-banach-33ab2b/deploys)
